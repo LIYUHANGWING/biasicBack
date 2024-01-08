@@ -1,0 +1,118 @@
+//游戏内音乐与音效
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public class AudioTest : MonoBehaviour
+{
+
+    //先获取AudioClip
+    public AudioClip music;
+    public AudioClip se;
+
+    //播放器组件
+
+    private AudioSource player;
+    // Start is called before the first frame update
+    void Start()
+    {
+        /*
+        player= GetComponent<AudioSource>();
+        //设定播放的音乐片段
+        player.clip= music;
+        //循环
+        player.loop= true;
+        player.volume= 0.5f;
+        player.Play();
+        */
+        
+    }
+
+    // Update is called once per frame
+    void Update()
+    {
+        /*
+        if(Input.GetKeyDown(KeyCode.Space)) {
+
+            if (player.isPlaying)
+            {
+                //暂停播放；
+                player.Pause();
+            }
+            else
+            {
+                //恢复播放
+                player.UnPause();
+
+            }
+        }
+
+        //游戏互动音效,按鼠标左键播放声音
+        if(Input.GetMouseButtonDown(0))
+        {
+            player.PlayOneShot(se);
+        }*/
+
+        //补充：播放视频用画布，代码差不多
+    }
+}
+//获取按键信息
+
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public class keyTest : MonoBehaviour
+{
+    // Start is called before the first frame update
+    void Start()
+    {
+
+    }
+
+    // Update is called once per frame
+    void Update()
+    {
+        //鼠标点击
+        //按下鼠标
+        /*
+
+        if (Input.GetMouseButtonDown(0))
+        {
+            Debug.Log("按下了鼠标左键");
+        }
+        if (Input.GetMouseButton(0))
+        {
+            Debug.Log("持续按下了鼠标左键");
+        }
+
+        //键盘点击：
+        if (Input.GetKeyDown(KeyCode.A))
+        {
+            Debug.Log("按下了A");
+        }
+        if (Input.GetKey(KeyCode.A))
+        {
+            Debug.Log("持续按下了A");
+        }
+        if (Input.GetKeyUp(KeyCode.A))
+        {
+            Debug.Log("松开了A");
+        }
+        */
+
+       //获取水平轴
+        /*
+        float horizontal = Input.GetAxis("Horizontal");
+        float vertical = Input.GetAxis("Vertical");
+        Debug.Log(horizontal + " " + vertical);
+        
+
+        //虚拟按键：
+
+        if (Input.GetButtonDown("Jump"))
+        {
+            Debug.Log("按下了跳跃");
+        }*/
+    }
+}
